@@ -12,14 +12,24 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 #### BONUS
 
-- [ ] Implement a shared element transition when user clicks into the details of a movie (1 point).
-- [ ] Trailers for popular movies are played automatically when the movie is selected (1 point).
-  - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
-  - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
+- [x] Implement a shared element transition when user clicks into the details of a movie (1 point).
+- [x] Trailers for popular movies are played automatically when the movie is selected (1 point).
+  - [x] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
+  - [x] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
 - [ ] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
 - [ ] Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
 - [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
 
+### App Walkthough GIF
+
+<img src="https://github.com/daniaa760/Flixster/blob/master/flixster2.gif" width=600><br>
+
+### Notes
+Trouble with API. In order for youtube videos to play properly, I had to change it from API 30 to API 29.
+
+## Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 ---
 
 ## Flix Part 1
