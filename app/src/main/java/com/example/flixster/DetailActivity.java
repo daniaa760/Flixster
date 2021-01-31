@@ -1,7 +1,5 @@
 package com.example.flixster;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.RatingBar;
@@ -78,7 +76,13 @@ public class DetailActivity extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d("DetailActivity", "onInitializationSuccess");
-                youTubePlayer.cueVideo(youtubeKey);
+                if(ratingBar.getRating() > 5){
+                    youTubePlayer.loadVideo(youtubeKey);
+                    youTubePlayer.play();
+                }
+                else{
+                    youTubePlayer.cueVideo(youtubeKey);
+                }
             }
 
             @Override
